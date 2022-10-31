@@ -43,6 +43,9 @@ header .top-menu {
   height: 36px;
   position: relative;
 }
+header .top-menu .inner {
+  max-width: 1903px;
+}
 header .top-menu .top-logo {
   display: flex;
   line-height: 36px;
@@ -123,6 +126,7 @@ header .gnb {
 }
 header .gnb >.inner {
   display:flex;
+  max-width: 1903px;
   position: relative;
   justify-content: space-around;
 }
@@ -305,7 +309,7 @@ header .notice a {
   position: relative;
   background-color: royalblue;
 }
-/* .content-main .youtube .youtube__area {
+.content-main .youtube .youtube__area {
   max-width: 1920px;
   background-color: orange;
   position: absolute;
@@ -314,20 +318,20 @@ header .notice a {
   left: 50%;
   margin-top: calc(1920px * 9 / 16 / -2);
   margin-left: calc(1920px / -2);
-} */
-/* .content-main .youtube .youtube::before {
+} 
+.content-main .youtube .youtube::before {
   content: "";
   display: block;
   width: 100%;
   height: 0;
-} */
-/* #player {
+}
+#player {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-} */
+}
 
 /* MAIN CONTENT-2 */
 .content-guide {

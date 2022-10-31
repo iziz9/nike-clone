@@ -119,13 +119,16 @@ header .gnb {
   padding: 0 38px 0 36px;
   height: 60px;
   z-index: 1;
+  /* display: flex; */
 }
 header .gnb >.inner {
   display:flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header .gnb .gnb-logo {
+  position: absolute;
+  left: 0;
   padding: 0 12px;
 }
 header .gnb .gnb-logo:hover {
@@ -134,6 +137,7 @@ header .gnb .gnb-logo:hover {
 header .gnb .gnb-menu {
   position: absolute;
   display: flex;
+  justify-content: center;
 }
 header .gnb-menu .item__name {
   padding: 16px 12px 18px;
@@ -187,6 +191,7 @@ header .gnb .gnb-right {
   line-height: 60px;
   display: flex;
   position: absolute;
+  top: 0;
   right: -6px;
   bottom: 5px;
 }
@@ -211,7 +216,7 @@ header .gnb .gnb-right .search__input:hover {
 header .gnb .gnb-right .search__icon {
   width: auto;
   height: auto;
-  padding: 6px 8px;
+  padding: 6px 12px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -230,7 +235,7 @@ header .gnb .gnb-right a {
   margin:  auto 6px;
 }
 header .gnb .gnb-right a img {
-  margin-bottom: 12px;;
+  margin-bottom: 1px;
 }
 header .gnb .gnb-right a:hover {
   border-style: none;
@@ -293,6 +298,36 @@ header .notice a {
   margin-top: 24px;
   line-height: 1.5;
 }
+.content-main .youtube {
+  display: block;
+  max-width: 1920px;
+  height: 900px;
+  position: relative;
+  background-color: royalblue;
+}
+/* .content-main .youtube .youtube__area {
+  max-width: 1920px;
+  background-color: orange;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+  margin-left: calc(1920px / -2);
+} */
+/* .content-main .youtube .youtube::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+} */
+/* #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 
 /* MAIN CONTENT-2 */
 .content-guide {
@@ -418,7 +453,12 @@ header .notice a {
 .content-featured .swiper .swiper-slide .sw__text p {
   color: #757575;
 }
-
+.content-featured .swiper .swiper-scrollbar {
+  visibility: hidden;
+}
+.content-featured .swiper:hover .swiper-scrollbar {
+  visibility: visible;
+}
 /* MAIN CONTENT-4 */
 .content-essentials {
   width: fit-content;

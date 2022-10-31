@@ -26,7 +26,8 @@ h2 {
   'opsz' 48
 }
 .content-wrap {
-  width: 100%;
+  max-width: 1903px;
+  margin: 0 auto;
 }
 .inner {
   margin: 0 auto;
@@ -340,19 +341,18 @@ header .notice a {
   grid-area: third;
 }
 .content-guide .grid-area .grid-wrap .grid-imag-first {
-  width: 906px;
-  height: 1216px;
-  overflow: hidden;
-  position: relative;
-}
-.content-guide .grid-area .grid-wrap .grid-image-second,
-.content-guide .grid-area .grid-wrap .grid-image-third {
-  width: 906px;
-  height: 600px;
+  width: 100%;
   overflow: hidden;
   position: absolute;
 }
-.content-guide .grid-area .grid-wrap .grid-image img{
+.content-guide .grid-area .grid-wrap .grid-image-second,
+.content-guide .grid-area .grid-wrap .grid-image-third {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+.content-guide .grid-area .grid-wrap .grid-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;

@@ -302,36 +302,6 @@ header .notice a {
   margin-top: 24px;
   line-height: 1.5;
 }
-.content-main .youtube {
-  display: block;
-  max-width: 1920px;
-  height: 900px;
-  position: relative;
-  background-color: royalblue;
-}
-.content-main .youtube .youtube__area {
-  max-width: 1920px;
-  background-color: orange;
-  position: absolute;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  margin-top: calc(1920px * 9 / 16 / -2);
-  margin-left: calc(1920px / -2);
-} 
-.content-main .youtube .youtube::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0;
-}
-#player {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 /* MAIN CONTENT-2 */
 .content-guide {
@@ -408,7 +378,8 @@ header .notice a {
 
 /* MAIN CONTENT-3 */
 .content-featured {
-  max-width: 1920px;
+  max-width: 1903px;
+  width: 100%;
   margin: auto;
 }
 .content-featured .content-featured-top {
@@ -442,6 +413,11 @@ header .notice a {
 .content-featured .swiper .swiper-slide {
   margin-bottom: 48px;
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.content-featured .swiper .swiper-slide img {
+  width: 100%;
 }
 .content-featured .swiper .swiper-slide .sw__text {
   position: relative;
@@ -472,9 +448,18 @@ header .notice a {
   display: flex;
   margin-top: 23px;
   column-gap: 12px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .content-essentials .apparel {
   position: relative;
+  display: block;
+  width: calc(100% /3);
+}
+.content-essentials .apparel img {
+  width: 100%;
 }
 .content-essentials .apparel p {
   font-size: 20px;

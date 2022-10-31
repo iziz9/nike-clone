@@ -271,8 +271,14 @@ header .notice a {
   overflow: hidden;
 }
 .content-main > a {
+  display: block;
+  width: 100%;
   text-align: center;
   margin: auto;
+}
+.content-main > a > img {
+  display: block;
+  width: 100%;
 }
 .content-main .purchase-btn {
   width: 102px;

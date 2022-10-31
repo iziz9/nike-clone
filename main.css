@@ -28,6 +28,7 @@ h2 {
 .content-wrap {
   max-width: 1903px;
   margin: 0 auto;
+  padding: 0 calc(24px * 2);
 }
 .inner {
   margin: 0 auto;
@@ -413,7 +414,7 @@ header .notice a {
   margin-right: 12px;
 }
 .content-featured .swiper {
-  margin: 0 calc(24px * 2);
+  /* margin: 0 calc(24px * 2); */
   flex-grow: 1;
 }
 .content-featured .swiper .swiper-slide {
